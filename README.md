@@ -11,12 +11,4 @@ An interactive, space-educational web application built with React, Vite, Supaba
 * **APIs & Data:** NASA API integration
 * **Hosting & Deployment:** Vercel
 
-## Local Development
 
-**Prerequisites:** Node.js
-
-1. Clone the repository and install dependencies:
-   ```bash
-   git clone [https://github.com/Gmanjot4321/NovaNexus-Clean.git](https://github.com/Gmanjot4321/NovaNexus-Clean.git)
-   cd novanexus
-   npm install
