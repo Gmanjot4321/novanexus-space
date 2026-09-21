@@ -1,6 +1,0 @@
-{
-  "name": "NovaNexus",
-  "description": "An interactive educational cosmos dashboard and 3D astronomical presentation tool with solar system exploration, relativistic time travel and spacetime dilation laboratory, real-time NASA telemetry, ISS live orbital tracking, Mars rovers, and cinematic cosmic phenomena.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
