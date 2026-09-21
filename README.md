@@ -44,14 +44,6 @@ Designed as a flagship demonstration of advanced frontend engineering and data o
 
 ```text
 novanexus/
-├── bun.lock                        # Bun dependency lockfile
-├── package.json                    # Full dependency specification
-├── tsconfig.json                   # TypeScript compiler configuration
-├── vite.config.ts                  # Vite build configuration
-├── metadata.json                   # Project metadata
-├── index.html                      # Root HTML template
-├── .env.example                    # Environment variable template
-├── README.md                       # Project documentation
 │
 ├── [Offline AI Data Generators & Formatting Scripts]
 │   ├── gen_neos.cjs                # AI generator for static NEO encyclopedic data
@@ -105,4 +97,19 @@ novanexus/
     │   ├── celestialData.ts        # Encyclopedic planetary parameters
     │   ├── codexQuizData.ts        # Structured Q&A for the Codex Arena
     │   ├── comparableEntitiesData.ts # Relational scaling data
-    │   ├── extraDashboardsData.ts  # Supplementary
+    │   ├── extraDashboardsData.ts  # Supplementary analytical metrics
+    │   ├── extremeData.ts          # Edge-case cosmic phenomena
+    │   ├── knowledgeData.ts        # General astronomical concepts
+    │   ├── neoData.ts              # Historical lore for famous Near-Earth Objects
+    │   ├── phenomenaData.ts        # Physics parameters for cosmic events
+    │   ├── telemetryDashboardsData.ts # Baseline telemetry structures
+    │   └── universeData.ts         # Macro-scale galactic mapping
+    │
+    ├── services/                   # [DYNAMIC TIER] Live API Orchestration
+    │   ├── nasaApiService.ts       # Live async fetching for NASA NeoWs
+    │   └── marsPhotosData.ts       # Live fetcher for NASA Mars Rover image endpoints
+    │
+    └── utils/                      # [Core Utilities]
+        ├── audioEngine.ts          # Web Audio API ambient soundscapes
+        ├── planetTextures.ts       # 3D material and texture mappers
+        └── supabaseClient.ts       # PostgreSQL connection and state synchronization
