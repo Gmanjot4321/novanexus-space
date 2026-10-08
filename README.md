@@ -1,6 +1,9 @@
-# NovaNexus — Interactive 3D Cosmos & NASA Explorer 
+# NovaNexus — Interactive 3D Cosmos & NASA Explorer 🌌✨
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-novanexus--space.vercel.app-success?style=for-the-badge&logo=vercel)](https://novanexus-space.vercel.app)
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/Gmanjot4321/novanexus-space)
+
+> 🔗 **Live Demo:** [https://novanexus-space.vercel.app](https://novanexus-space.vercel.app)
 
 **NovaNexus** is a highly visual, physics-driven 3D web application that merges real-time celestial mechanics, live astronomical telemetry, and AI-curated cosmic lore into a fully explorable, interactive universe. 
 
@@ -8,7 +11,7 @@ Designed as a flagship demonstration of advanced frontend engineering and data o
 
 ---
 
-## Key Highlights & Architecture
+## ⚡ Key Highlights & Architecture
 
 * **Real-Time 3D Rendering:** Built directly on Three.js (no React Three Fiber wrapper), featuring dynamic lighting setups, procedural celestial materials, and mathematical planetary orbit simulations.
 * **Hybrid Data Architecture (Live Telemetry + Static Lore):** 
@@ -20,7 +23,7 @@ Designed as a flagship demonstration of advanced frontend engineering and data o
 
 ---
 
-## Tech Stack & Technologies Used
+## 🛠️ Tech Stack & Technologies Used
 
 ### Frontend & 3D Visualization
 * **Core Framework:** React 19, TypeScript
@@ -37,7 +40,7 @@ Designed as a flagship demonstration of advanced frontend engineering and data o
 
 ---
 
-## Comprehensive System Architecture
+## 📁 Comprehensive System Architecture
 
 ```text
 novanexus/
@@ -114,7 +117,7 @@ novanexus/
 
 ---
 
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
@@ -151,3 +154,4 @@ npm run dev     # dev server at http://localhost:3000
 npm run build   # production bundle -> dist/ (deploys to Vercel)
 ```
 
+> ⚠️ **Security note:** never commit your `.env` file. It's git-ignored — use `.env.example` as the template and set real values in your hosting provider's environment settings.
