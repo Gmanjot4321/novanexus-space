@@ -169,11 +169,11 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onPlayIntro }) =
       category: 'nasa',
       label: 'Galactic Codex',
       icon: BookOpen,
-      tag: 'Peer-Reviewed Archive',
+      tag: 'Curated Archive',
       color: 'from-amber-500 to-orange-600',
       badgeColor: 'bg-amber-500/15 text-amber-300 border-amber-500/40',
       glowColor: 'group-hover:border-amber-400/50 group-hover:shadow-[0_0_25px_rgba(245,158,11,0.2)]',
-      desc: 'Curated peer-reviewed cosmic guides with AI TTS narration, 3D interactive models, and trivia quizzes.',
+      desc: 'Curated cosmic guides with AI TTS narration, 3D interactive models, and trivia quizzes.',
       stats: '20+ Guides • AI Audio Narrator'
     },
     {
@@ -285,7 +285,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onPlayIntro }) =
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-[11px] sm:text-xs text-slate-300 font-mono max-w-2xl mx-auto leading-relaxed hidden sm:block"
             >
-              Interactive observable universe laboratory. Explore Keplerian planetary physics, relativistic time travel, black hole event horizons, NASA telemetry, scale benchmarks, and peer-reviewed cosmic guides.
+              Interactive observable universe laboratory. Explore Keplerian planetary physics, relativistic time travel, black hole event horizons, NASA telemetry, scale benchmarks, and curated cosmic guides.
             </motion.p>
 
             {/* Quick Filter Pill Switcher */}
@@ -900,7 +900,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onPlayIntro }) =
             <div className="flex-1 space-y-5 text-left">
               <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-500/15 border border-amber-500/40 text-amber-300 text-xs font-mono">
                 <BookOpen className="w-3.5 h-3.5 text-amber-400" />
-                <span>SECTION 07 • ASTROPHYSICAL PEER-REVIEWED ARCHIVE</span>
+                <span>SECTION 07 • ASTROPHYSICAL KNOWLEDGE ARCHIVE</span>
               </div>
 
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white font-sans uppercase tracking-tight">
@@ -966,7 +966,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onPlayIntro }) =
               </div>
 
               <div className="text-[11px] font-mono text-slate-400 text-center">
-                Peer-reviewed astrophysical data with 3D interactive models
+                Curated astrophysical data with 3D interactive models
               </div>
             </div>
           </motion.div>

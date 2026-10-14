@@ -202,7 +202,7 @@ export const CodexQuizArena: React.FC<CodexQuizArenaProps> = ({ onOpenArticle })
               </span>
             </div>
             <p className="text-xs text-slate-400 font-mono mt-0.5">
-              Level up cosmic mastery with peer-reviewed astrophysical challenge quizzes
+              Level up cosmic mastery with curated astrophysical challenge quizzes
             </p>
           </div>
         </div>
