@@ -64,10 +64,6 @@ export const DashboardsView: React.FC<DashboardsViewProps> = () => {
     return TELEMETRY_DASHBOARDS.find(d => d.id === selectedDashboardId) || TELEMETRY_DASHBOARDS[0];
   }, [selectedDashboardId]);
 
-  const totalCatalogedItems = useMemo(() => {
-    return TELEMETRY_DASHBOARDS.reduce((acc, d) => acc + d.items.length, 0);
-  }, []);
-
   // Terminate speech on unmount
   useEffect(() => {
     return () => {
@@ -157,12 +153,9 @@ export const DashboardsView: React.FC<DashboardsViewProps> = () => {
                 <h1 className="text-2xl sm:text-3xl md:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-indigo-300 to-fuchsia-400 tracking-tight font-mono uppercase">
                   Cosmic Records & Rankings
                 </h1>
-                <span className="px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">
-                  {totalCatalogedItems} Astrophysical Records
-                </span>
               </div>
               <p className="text-xs md:text-sm text-slate-400 font-mono mt-1">
-                Galactic Extremes, All-Time Cosmic Records, Benchmarks &amp; Comparative Leaderboards
+                Space records, ranked. Biggest stars, fastest spins, farthest galaxies.
               </p>
             </div>
           </div>
@@ -179,7 +172,7 @@ export const DashboardsView: React.FC<DashboardsViewProps> = () => {
           <div className="flex items-center justify-between">
             <span className="text-[11px] font-mono text-slate-300 uppercase tracking-wider flex items-center gap-1.5 font-bold">
               <Sparkles className="w-3.5 h-3.5 text-purple-400" />
-              <span>Select Telemetry Domain ({TELEMETRY_DASHBOARDS.length} Dashboards Available)</span>
+              <span>Pick a category</span>
             </span>
             <span className="text-[10px] font-mono text-slate-400 hidden sm:inline">
               Click any dashboard to switch astrophysical metrics
