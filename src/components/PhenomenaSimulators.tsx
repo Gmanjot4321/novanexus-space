@@ -1615,7 +1615,7 @@ export const PhenomenaSimulators: React.FC<PhenomenaSimulatorsProps> = ({ onBack
                   ? 'bg-gradient-to-r from-cyan-500/30 to-purple-500/30 border-cyan-400 text-cyan-300 shadow-[0_0_15px_rgba(6,182,212,0.4)] animate-pulse'
                   : 'bg-white/5 border-white/10 text-slate-300 hover:text-white hover:bg-white/10'
               }`}
-              title={isNarrating ? 'Mute Narrator' : 'Start Audio-Synced Documentary Narration'}
+              title={isNarrating ? 'Mute Narrator' : 'Start narrated audio'}
             >
               {isNarrating ? <Volume2 className="w-3.5 h-3.5" /> : <VolumeX className="w-3.5 h-3.5" />}
               <span className="hidden sm:inline">{isNarrating ? 'Voice ON' : 'Voice OFF'}</span>
@@ -1649,7 +1649,7 @@ export const PhenomenaSimulators: React.FC<PhenomenaSimulatorsProps> = ({ onBack
                   ? 'bg-purple-500/30 border-purple-400 text-purple-200'
                   : 'bg-white/5 border-white/10 text-slate-400 hover:text-white'
               }`}
-              title="Toggle Scientific Breakdown Dossier Drawer"
+              title="Toggle science breakdown panel"
             >
               <Info className="w-3.5 h-3.5" />
               <span className="hidden md:inline">Dossier</span>
