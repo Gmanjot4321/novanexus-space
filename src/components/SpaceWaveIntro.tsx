@@ -327,14 +327,14 @@ export const SpaceWaveIntro: React.FC<SpaceWaveIntroProps> = ({ onComplete }) =>
             NOVANEXUS
           </h1>
           <p className="mt-3 text-xs sm:text-sm font-mono tracking-[0.3em] text-cyan-400 font-semibold uppercase">
-            ASTROPHYSICAL ENGINE INITIALIZING
+            LOADING UNIVERSE
           </p>
         </motion.div>
 
         {/* Dynamic Loading Wave Pulse */}
         <div className="flex items-center gap-1.5 mt-4">
           <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping" />
-          <span className="text-xs font-mono text-slate-300 tracking-wider">Harmonizing Space Waves (Click anywhere to skip)...</span>
+          <span className="text-xs font-mono text-slate-300 tracking-wider">Loading... (Click anywhere to skip)</span>
         </div>
       </div>
     </motion.div>

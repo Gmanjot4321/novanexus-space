@@ -202,7 +202,7 @@ export const CodexQuizArena: React.FC<CodexQuizArenaProps> = ({ onOpenArticle })
               </span>
             </div>
             <p className="text-xs text-slate-400 font-mono mt-0.5">
-              Level up cosmic mastery with curated astrophysical challenge quizzes
+              Test your space knowledge with quizzes
             </p>
           </div>
         </div>
@@ -246,7 +246,7 @@ export const CodexQuizArena: React.FC<CodexQuizArenaProps> = ({ onOpenArticle })
                   Galactic Blitz
                 </h4>
                 <p className="text-xs text-slate-400 font-mono leading-relaxed">
-                  A high-octane 5-question sprint across general astrophysics, black holes, exoplanets, and relativity.
+                  A fast 5-question sprint across astrophysics, black holes, exoplanets, and relativity.
                 </p>
               </div>
 
@@ -274,7 +274,7 @@ export const CodexQuizArena: React.FC<CodexQuizArenaProps> = ({ onOpenArticle })
                   Endless Survival
                 </h4>
                 <p className="text-xs text-slate-400 font-mono leading-relaxed">
-                  Start with 3 lives. Answer as many consecutive questions as possible to rack up exponential combo multipliers!
+                  Start with 3 lives. Chain correct answers to build combo multipliers!
                 </p>
               </div>
 
@@ -302,7 +302,7 @@ export const CodexQuizArena: React.FC<CodexQuizArenaProps> = ({ onOpenArticle })
                   Domain Mastery
                 </h4>
                 <p className="text-xs text-slate-400 font-mono leading-relaxed">
-                  Select a focused astrophysical domain below to hone deep expertise in specific cosmic theories and exoplanets.
+                  Pick a topic below to test your knowledge.
                 </p>
               </div>
 
@@ -525,7 +525,7 @@ export const CodexQuizArena: React.FC<CodexQuizArenaProps> = ({ onOpenArticle })
 
             <div>
               <h3 className="text-2xl font-bold font-mono text-white">
-                {currentScore === activeQuestions.length ? '🌟 Galactic Mastery Achieved!' : 'Cosmic Quiz Session Complete!'}
+                {currentScore === activeQuestions.length ? '🌟 Quiz Mastered!' : 'Cosmic Quiz Session Complete!'}
               </h3>
               <p className="text-sm font-mono text-slate-400 mt-1">
                 You correctly answered <strong className="text-cyan-300 font-bold">{currentScore}</strong> out of <strong className="text-white">{activeQuestions.length}</strong> questions
