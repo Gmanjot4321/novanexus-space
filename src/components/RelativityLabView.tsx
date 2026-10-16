@@ -84,7 +84,7 @@ const GRAV_BODIES: GravBodyPreset[] = [
     defaultOrbitRadiusRatio: 3.5,
     dilationAtSurfaceOrOrbit: '+0.0219 s / year slower than deep space',
     gravRedshiftLabel: 'Δλ/λ = 6.96 × 10⁻¹⁰',
-    description: 'Our terrestrial reference well. Earth’s mass creates a subtle but empirically measured time dilation lag.', 
+    description: "Our home baseline. Earth's gravity slows time by a tiny, measurable amount.", 
     famousExample: 'GPS Constellation & Hafele–Keating Atomic Clock Flights (1971)',
     deepDiveAnalysis: 'On Earth’s surface, gravity slows time by ~0.696 parts per billion compared to deep space. Over an 80-year human lifetime, your body ages ~1.75 seconds slower than an observer living in intergalactic void. Because GPS satellites orbit at 20,200 km where Earth gravity is weaker, their onboard atomic clocks tick +45.9 μs/day faster than Earth clocks.'
   },
@@ -127,7 +127,7 @@ const GRAV_BODIES: GravBodyPreset[] = [
   { 
     id: 'millers_planet', 
     name: 'Miller’s Planet (Gargantua Ergosphere)', 
-    classification: 'Supermassive Black Hole Horizon Custody',
+    classification: 'Supermassive Black Hole',
     massSolar: 100000000, 
     massKg: '1.989 × 10³⁸ kg (100 Million M☉)',
     schwarzschildRadiusKm: 295000000, 
@@ -138,7 +138,7 @@ const GRAV_BODIES: GravBodyPreset[] = [
     defaultOrbitRadiusRatio: 1.015,
     dilationAtSurfaceOrOrbit: '61,320x slower (1 hour = 7 Earth years)',
     gravRedshiftLabel: 'Extreme Horizon Lag (1 hr = 61,320 hrs)',
-    description: 'Skimming the cusp of an extreme 100-million solar mass rotating Kerr black hole event horizon.', 
+    description: 'Orbiting just outside the event horizon of a 100-million solar mass spinning black hole.', 
     famousExample: 'Interstellar Movie Kip Thorne General Relativity Metric',
     deepDiveAnalysis: 'On Miller’s Planet orbiting inside the gravitational throat of Gargantua, 1 hour on the surface equals 7 Earth years in deep space (a 61,320x slowdown). A short 3.5-hour excursion down to the watery surface caused 24.5 years to pass for astronaut Romilly waiting aboard the Endurance in distant orbit!'
   },
