@@ -113,7 +113,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onPlayIntro }) =
       color: 'from-cyan-500 to-blue-600',
       badgeColor: 'bg-cyan-500/15 text-cyan-300 border-cyan-500/40',
       glowColor: 'group-hover:border-cyan-400/50 group-hover:shadow-[0_0_25px_rgba(6,182,212,0.2)]',
-      desc: 'Precision Keplerian trajectories, 20+ planets & moons with presentation and realistic scale toggles.',
+      desc: 'Accurate orbits for 20+ planets & moons, with presentation and true-scale modes.',
       stats: '20+ Bodies • 0.1x-100x Warp'
     },
     {
@@ -125,7 +125,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onPlayIntro }) =
       color: 'from-purple-500 via-pink-500 to-rose-600',
       badgeColor: 'bg-purple-500/15 text-purple-300 border-purple-500/40',
       glowColor: 'group-hover:border-purple-400/50 group-hover:shadow-[0_0_25px_rgba(168,85,247,0.2)]',
-      desc: 'Lorentz light clock dilation, Twin Paradox interstellar time machine, Miller’s Planet well, and GPS proof.',
+      desc: 'Time dilation, the twin paradox, Miller’s Planet, and GPS time correction.',
       stats: 'γ Lorentz • Gravitational Wells'
     },
     {
@@ -137,7 +137,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onPlayIntro }) =
       color: 'from-fuchsia-500 to-pink-600',
       badgeColor: 'bg-fuchsia-500/15 text-fuchsia-300 border-fuchsia-500/40',
       glowColor: 'group-hover:border-fuchsia-400/50 group-hover:shadow-[0_0_25px_rgba(217,70,239,0.2)]',
-      desc: 'Supernovae shocks, relativistic black hole accretion disks, and deep-space nebular synthesis.',
+      desc: 'Supernovae, black hole accretion disks, and nebulae.',
       stats: '8 Extreme Simulators'
     },
     {
@@ -149,7 +149,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onPlayIntro }) =
       color: 'from-cyan-500 to-indigo-600',
       badgeColor: 'bg-cyan-500/15 text-cyan-300 border-cyan-500/40',
       glowColor: 'group-hover:border-indigo-400/50 group-hover:shadow-[0_0_25px_rgba(99,102,241,0.2)]',
-      desc: 'Live NASA APOD discovery, real-time ISS orbital coordinates & ground track, Mars rovers, and Hohmann Δv.',
+      desc: "NASA's picture of the day, live ISS tracking, Mars rovers, and orbital transfers.",
       stats: 'Real-time REST API • Mars Feeds'
     },
     {
@@ -161,7 +161,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onPlayIntro }) =
       color: 'from-emerald-500 to-teal-600',
       badgeColor: 'bg-emerald-500/15 text-emerald-300 border-emerald-500/40',
       glowColor: 'group-hover:border-emerald-400/50 group-hover:shadow-[0_0_25px_rgba(16,185,129,0.2)]',
-      desc: 'Real-time near-Earth asteroid tracking, orbital proximity vectors, and Sentry impact risk calculations.',
+      desc: 'Live asteroid tracking, close-approach data, and impact risk ratings.',
       stats: 'JPL CNEOS • Torino Threat Scale'
     },
     {
@@ -173,7 +173,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onPlayIntro }) =
       color: 'from-amber-500 to-orange-600',
       badgeColor: 'bg-amber-500/15 text-amber-300 border-amber-500/40',
       glowColor: 'group-hover:border-amber-400/50 group-hover:shadow-[0_0_25px_rgba(245,158,11,0.2)]',
-      desc: 'Curated cosmic guides with AI TTS narration, 3D interactive models, and trivia quizzes.',
+      desc: 'Space guides with audio narration, 3D models, and quizzes.',
       stats: '20+ Guides • AI Audio Narrator'
     },
     {
@@ -908,7 +908,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onPlayIntro }) =
               </h2>
 
               <p className="text-sm sm:text-base text-slate-300 font-mono leading-relaxed">
-                Delve into 20+ comprehensive astrophysical guides covering stellar lifecycles, dark energy, neutron stars, quantum fluctuations, and extraterrestrial habitability. Listen with Web Speech AI narration or test your mastery with interactive quizzes.
+                Explore 20+ guides covering star lifecycles, dark energy, neutron stars, and the search for life. Listen with audio narration or test yourself with quizzes.
               </p>
 
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3.5 pt-2">
@@ -918,7 +918,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onPlayIntro }) =
                 </div>
                 <div className="p-3.5 rounded-xl bg-amber-950/40 border border-amber-500/30 font-mono">
                   <span className="text-[11px] text-slate-400 block uppercase">AI Narration</span>
-                  <span className="text-lg font-bold text-amber-300">Natural Voice</span>
+                  <span className="text-lg font-bold text-amber-300">Audio</span>
                 </div>
                 <button
                   onClick={() => handleNavigateWithSound('knowledge_base')}

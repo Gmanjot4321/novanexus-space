@@ -668,7 +668,7 @@ export const DashboardsView: React.FC<DashboardsViewProps> = () => {
 
               {/* Bottom Quick Metric Tip */}
               <div className="pt-4 mt-4 border-t border-white/[0.08] flex flex-col sm:flex-row items-center justify-between text-[11px] font-mono text-slate-400 gap-2">
-                <span>Tip: Click any celestial entity to open its comprehensive dossier and hear voice narration.</span>
+                <span>Tip: click any object for its full profile and audio narration.</span>
                 <span className="text-cyan-400">Scale: {currentDashboard.unitLabel}</span>
               </div>
             </div>
