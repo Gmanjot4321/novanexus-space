@@ -1132,7 +1132,7 @@ export const NeoRadarView: React.FC = () => {
                     ? 'bg-cyan-500/25 border-cyan-400/60 text-white font-bold'
                     : 'bg-white/5 border-white/10 text-slate-300 hover:text-white hover:bg-white/10'
                 }`}
-                title="Tactical 3D Defense Angle"
+                title="3D View"
               >
                 <Compass className="w-3 h-3" />
                 <span className="hidden lg:inline">Tactical 3D</span>
@@ -1145,7 +1145,7 @@ export const NeoRadarView: React.FC = () => {
                     ? 'bg-cyan-500/25 border-cyan-400/60 text-white font-bold'
                     : 'bg-white/5 border-white/10 text-slate-300 hover:text-white hover:bg-white/10'
                 }`}
-                title="Top-Down Orbital Radar Disc"
+                title="Top-Down View"
               >
                 <Maximize2 className="w-3 h-3" />
                 <span className="hidden lg:inline">Top-Down</span>
@@ -1209,7 +1209,7 @@ export const NeoRadarView: React.FC = () => {
                   [
                     { id: 'target_only', label: 'Target', title: 'Show label for focused target only (Clean)' },
                     { id: 'threats', label: 'Threats', title: 'Show labels for hazardous asteroids' },
-                    { id: 'all', label: 'All', title: 'Show labels for all radar contacts' },
+                    { id: 'all', label: 'All', title: 'Show labels for all asteroids' },
                     { id: 'off', label: 'Off', title: 'Hide all label cards' },
                   ] as const
                 ).map((mode) => {
@@ -1310,7 +1310,7 @@ export const NeoRadarView: React.FC = () => {
               setIsSidebarCollapsed(false);
             }}
             className="pointer-events-auto absolute top-20 sm:top-20 md:top-20 right-4 sm:right-6 z-20 px-3.5 py-2 rounded-2xl bg-[#020617]/90 backdrop-blur-2xl border border-cyan-400/40 text-cyan-300 hover:text-white hover:bg-cyan-500/20 text-xs font-mono shadow-2xl transition-all flex items-center gap-2 animate-in fade-in cursor-pointer"
-            title="Open Sentry Asteroid Threat Matrix"
+            title="Open Sentry impact data"
           >
             <ChevronLeft className="w-4 h-4" />
             <span>Open Sentry Matrix</span>
