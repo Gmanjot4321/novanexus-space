@@ -88,7 +88,7 @@ export const TelemetryScatterView: React.FC<TelemetryScatterViewProps> = ({
               </span>
             </div>
             <p className="text-[11px] text-slate-400 font-mono mt-0.5">
-              Hover or click celestial nodes to lock target reticle &amp; view astrophysics dossier
+              Hover or click a bubble to pin it and view its profile
             </p>
           </div>
         </div>
@@ -183,7 +183,7 @@ export const TelemetryScatterView: React.FC<TelemetryScatterViewProps> = ({
             fontFamily="monospace"
             fontWeight="bold"
           >
-            ASTROPHYSICAL RANK SEQUENCE ▶
+            RANKINGS ▶
           </text>
 
           {/* Selected Node Crosshair Target Reticle */}
@@ -324,7 +324,7 @@ export const TelemetryScatterView: React.FC<TelemetryScatterViewProps> = ({
       <div className="flex flex-wrap items-center justify-between text-[11px] font-mono text-slate-400 px-2">
         <span className="flex items-center gap-1.5">
           <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
-          <span>Click any bubble to pin target telemetry to the deep dossier panel.</span>
+          <span>Click a bubble to pin its data to the side panel.</span>
         </span>
         <span className="text-cyan-300">
           Selected: {selectedEntity?.name || items[0]?.name} ({selectedEntity?.displayValue || items[0]?.displayValue})

@@ -150,7 +150,7 @@ export async function fetchApod(date?: string): Promise<{ data: ApodData; isLive
     const apodData: ApodData = {
       date: json.date || targetDate,
       title: json.title || 'Astronomy Picture of the Day',
-      explanation: json.explanation || 'Scientific explanation unavailable for this record.',
+      explanation: json.explanation || 'No explanation available.',
       url: sanitized.embedUrl || sanitized.url || CURATED_APOD_LIBRARY[0].url,
       hdurl: rawHdUrl,
       media_type: isVideo ? 'video' : 'image',
@@ -410,7 +410,7 @@ export const HOHMANN_PRESETS: HohmannMission[] = [
     synodicPeriodDays: 780, // ~25.6 months wait between launch windows
     color: '#ef4444',
     historicalMission: 'Perseverance & Curiosity Mars Science Lab',
-    scientificObjective: 'Minimum energy orbital transfer connecting Earth periapsis to Martian apoapsis.'
+    scientificObjective: 'The most fuel-efficient path from Earth to Mars.'
   },
   {
     id: 'earth_venus',
@@ -426,7 +426,7 @@ export const HOHMANN_PRESETS: HohmannMission[] = [
     synodicPeriodDays: 584,
     color: '#f59e0b',
     historicalMission: 'Magellan Radar Orbiter & DAVINCI Probe',
-    scientificObjective: 'Retrograde deceleration dropping orbital perihelion to intercept Venus.'
+    scientificObjective: 'Slowing down to drop toward Venus.'
   },
   {
     id: 'earth_jupiter',
