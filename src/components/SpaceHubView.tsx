@@ -660,15 +660,15 @@ export const SpaceHubView: React.FC = () => {
                             </h3>
                             <p className="text-xs font-mono text-slate-400">
                               {isDirectVideo 
-                                ? 'Astronomical time-lapse ready for smooth inline HTML5 video playback.' 
-                                : 'This record contains an external astronomical video presentation.'}
+                                ? 'Time-lapse ready to play.' 
+                                : 'This entry includes an external video.'}
                             </p>
                           </div>
                           <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
                             <Tooltip
                               title="Play Inline"
                               badge="HTML5 / Embed"
-                              content="Streams the astronomical video or time-lapse directly within this frame."
+                              content="Plays the video right here."
                             >
                               <button
                                 onClick={() => {
@@ -684,7 +684,7 @@ export const SpaceHubView: React.FC = () => {
 
                             <Tooltip
                               title="Dedicated Window"
-                              content="Opens the astronomical video in its original full-screen player or host platform in a new tab."
+                              content="Opens the video in a new tab."
                             >
                               <a
                                 href={apodData.url}
@@ -724,7 +724,7 @@ export const SpaceHubView: React.FC = () => {
                         title="Inspect HD Master"
                         badge="High-Res"
                         side="left"
-                        content="Examines the full uncompressed high-resolution deep space capture in an interactive viewport."
+                        content="View the full-resolution image."
                       >
                         <button
                           onClick={() => setShowHdModal(true)}
@@ -757,7 +757,7 @@ export const SpaceHubView: React.FC = () => {
                 <div className="flex items-center gap-2">
                   <Tooltip
                     title="Jump to Today"
-                    content="Resets calendar to today's latest astronomical picture or video published by NASA."
+                    content="Back to today's NASA picture."
                   >
                     <button
                       onClick={() => setSelectedDate(todayStr)}
@@ -803,7 +803,7 @@ export const SpaceHubView: React.FC = () => {
                     title="Voice Briefing"
                     badge="Web Speech AI"
                     side="left"
-                    content={isApodSpeaking ? "Stops active voice narration of the astronomical explanation." : "Synthesizes an audio voice reading of the astrophysical explanation."}
+                    content={isApodSpeaking ? "Stop narration." : "Read the explanation aloud."}
                   >
                     <button
                       onClick={handleToggleApodSpeech}
@@ -1055,7 +1055,7 @@ export const SpaceHubView: React.FC = () => {
                 <div className="flex items-center gap-1 p-1 bg-slate-950 rounded-xl border border-white/10 flex-wrap">
                   <Tooltip
                     title="Latest Downlinks"
-                    content="Pulls the most recent panoramic and instrument downlinks transmitted across the Deep Space Network."
+                    content="Fetches the latest photos sent back from Mars."
                   >
                     <button
                       onClick={() => {
@@ -1098,7 +1098,7 @@ export const SpaceHubView: React.FC = () => {
                 <span className="text-xs font-mono text-slate-300">Camera:</span>
                 <Tooltip
                   title="Filter by Camera Instrument"
-                  content="Select a specific camera payload: Mastcam color stereo, Navcam navigation, Hazcam hazard avoidance, or SuperCam laser."
+                  content="Choose a camera: Mastcam color stereo, Navcam navigation, Hazcam hazard avoidance, or SuperCam laser."
                 >
                   <select
                     value={selectedCamera}
