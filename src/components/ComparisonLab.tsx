@@ -222,15 +222,15 @@ export const ComparisonLab: React.FC<ComparisonLabProps> = ({
             <div>
               <div className="flex items-center gap-2 text-cyan-400 font-mono text-xs uppercase tracking-widest mb-1 font-semibold">
                 <Scale className="w-4 h-4 text-cyan-400" />
-                <span>Astrophysical Benchmark Deck</span>
+                <span>Comparison Deck</span>
                 <span className="text-slate-600">•</span>
                 <span className="text-purple-400">1-on-1 Celestial Lab</span>
               </div>
               <h1 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-                Planetary &amp; Stellar Comparison Engine
+                Planet &amp; Star Comparison
               </h1>
               <p className="text-xs sm:text-sm text-slate-400 font-mono mt-1 max-w-2xl">
-                Benchmark gravitational pull, volumetric scale, thermodynamic extremities, and survival conditions side-by-side.
+                Compare gravity, size, temperature extremes, and survival conditions side by side.
               </p>
             </div>
 
@@ -277,7 +277,7 @@ export const ComparisonLab: React.FC<ComparisonLabProps> = ({
             <div className="flex items-center justify-between text-[11px] font-mono text-slate-400">
               <span className="flex items-center gap-1.5 font-semibold text-slate-300">
                 <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-                <span>Curated Astronomical Matchups:</span>
+                <span>Try these matchups:</span>
               </span>
               <span className="text-[10px] text-slate-500 hidden sm:inline">Click any pair to load immediately</span>
             </div>
@@ -375,7 +375,7 @@ export const ComparisonLab: React.FC<ComparisonLabProps> = ({
             <button
               onClick={handleSwap}
               className="p-3.5 sm:p-4 rounded-2xl bg-gradient-to-tr from-cyan-500/20 via-purple-500/20 to-fuchsia-500/20 hover:from-cyan-500/30 hover:to-purple-500/30 border border-white/20 text-white hover:text-cyan-300 transition-all shadow-xl active:scale-90 cursor-pointer group"
-              title="Swap primary and benchmark candidates"
+              title="Swap the two bodies"
             >
               <ArrowLeftRight className="w-5 h-5 group-hover:rotate-180 transition-transform duration-500 text-cyan-300" />
             </button>
@@ -477,7 +477,7 @@ export const ComparisonLab: React.FC<ComparisonLabProps> = ({
                 className={`px-3 py-1.5 rounded-lg transition-all cursor-pointer ${
                   scaleMode === 'relative' ? 'bg-cyan-600 text-white font-bold shadow-sm' : 'text-slate-400 hover:text-white'
                 }`}
-                title="Display true physical size difference"
+                title="Show true size difference"
               >
                 True Scale
               </button>
@@ -489,7 +489,7 @@ export const ComparisonLab: React.FC<ComparisonLabProps> = ({
                 className={`px-3 py-1.5 rounded-lg transition-all cursor-pointer ${
                   scaleMode === 'normalized' ? 'bg-cyan-600 text-white font-bold shadow-sm' : 'text-slate-400 hover:text-white'
                 }`}
-                title="Display normalized equal focus"
+                title="Show normalized sizes"
               >
                 Normalized
               </button>
@@ -652,10 +652,10 @@ export const ComparisonLab: React.FC<ComparisonLabProps> = ({
                   </div>
                   <div>
                     <h3 className="text-sm font-bold text-white uppercase font-mono tracking-wider">
-                      Surface Gravitational Mechanics &amp; Jump Physics
+                      Surface Gravity &amp; Jump Physics
                     </h3>
                     <p className="text-xs text-slate-400">
-                      Simulates relative vertical reach and real body weight on each world
+                      See how high you'd jump and what you'd weigh on each world
                     </p>
                   </div>
                 </div>

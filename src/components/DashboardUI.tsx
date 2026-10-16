@@ -119,7 +119,7 @@ export const DashboardUI: React.FC<DashboardUIProps> = ({
     } catch (err: any) {
       setSupabaseSyncResult({
         success: false,
-        message: err?.message || 'Synchronization exception occurred.'
+        message: err?.message || 'Sync failed.'
       });
     } finally {
       setIsSyncingSupabase(false);
@@ -291,7 +291,7 @@ export const DashboardUI: React.FC<DashboardUIProps> = ({
                 ? 'bg-purple-500/25 border-purple-400/60 text-purple-200 shadow-[0_0_14px_rgba(168,85,247,0.4)] ring-1 ring-purple-400/40'
                 : 'bg-[#020617]/90 border-white/[0.16] text-slate-400 hover:text-white hover:bg-white/5'
             }`}
-            title={isAmbientOn ? 'Cosmic Space Drone Active. Click to stop.' : 'Turn on Space Audio Drone'}
+            title={isAmbientOn ? 'Ambient space audio on. Click to stop.' : 'Turn on ambient space audio'}
           >
             <Radio className={`w-3 h-3 sm:w-3.5 sm:h-3.5 shrink-0 ${isAmbientOn ? 'animate-pulse text-purple-300' : ''}`} />
             {isAmbientOn && (
