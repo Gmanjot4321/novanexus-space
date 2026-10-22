@@ -15,7 +15,7 @@ It combines custom orbital math, interactive camera controls, and a hybrid data 
 
 * **Real-Time 3D Rendering:** Built directly on Three.js (no React Three Fiber wrapper), featuring dynamic lighting setups, procedural celestial materials, and mathematical planetary orbit simulations.
 * **Hybrid Data Architecture (Live Telemetry + Static Lore):** 
-  * **Live NASA API Integration:** Asynchronously fetches and parses real-time astronomical data, near-Earth object (NEO) tracking, and planetary telemetry directly from NASA's public endpoints.
+  * **Live NASA API Integration:** Asynchronously fetches and parses astronomical data from NASA's public endpoints: picture of the day, near-Earth objects (NeoWs), and Mars rover photos.
   * **AI-Generated Cosmic Encyclopedias:** Utilizes offline generative AI scripts to research, structure, and format massive static datasets, powering the app's rich encyclopedic knowledge base with zero runtime latency.
 * **Orbit, Pan & Zoom Camera:** Navigate the 3D universe with Three.js OrbitControls-based camera navigation, moving seamlessly through celestial visualizations without losing spatial orientation.
 * **Persistent State:** Supabase (PostgreSQL) syncs NEO records, universe components, and planet textures; bookmarks and custom textures persist in the browser via localStorage.
@@ -35,7 +35,7 @@ It combines custom orbital math, interactive camera controls, and a hybrid data 
 ### Backend, APIs & Data Pipeline
 * **Live Data Provider:** NASA Open APIs (APOD, Asteroid NeoWs, Mars Rover Photos)
 * **Static Data Generation:** Node.js offline AI scripting (`gen_neos.cjs`, `gen_universe_components.cjs`, and automated formatting utilities)
-* **Database & Auth:** Supabase (PostgreSQL)
+* **Database (optional):** Supabase (PostgreSQL) sync
 * **Deployment:** Vercel
 
 ---
@@ -46,7 +46,7 @@ It combines custom orbital math, interactive camera controls, and a hybrid data 
 novanexus/
 │
 ├── [Offline AI Data Generators & Formatting Scripts]
-│   ├── gen_neos.cjs                # AI generator for static NEO encyclopedic data
+│   ├── gen_neos.cjs                # Script that generates the bundled static NEO catalog data
 │   ├── gen_universe_components.cjs # AI script for generating cosmic lore
 │   ├── make_bg_sleek.cjs           # Global background styling generator
 │   └── fix_*.cjs                   # Automated formatting scripts for batch processing (e.g., fix_celestial_bodies.cjs, fix_radar.cjs, fix_black_hole.cjs)
