@@ -285,7 +285,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onPlayIntro }) =
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-[11px] sm:text-xs text-slate-300 font-mono max-w-2xl mx-auto leading-relaxed hidden sm:block"
             >
-              Interactive observable universe laboratory. Explore Keplerian planetary physics, relativistic time travel, black hole event horizons, NASA telemetry, scale benchmarks, and curated cosmic guides.
+              Interactive observable universe laboratory. Explore planetary physics, relativistic time dilation, black hole event horizons, NASA telemetry, scale benchmarks, and curated cosmic guides.
             </motion.p>
 
             {/* Quick Filter Pill Switcher */}
@@ -404,7 +404,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onPlayIntro }) =
 
 
         {/* ===================================================================== */}
-        {/* SECTION 2: 3D SOLAR SYSTEM & KEPLERIAN PHYSICS (Helios Sun & Orbiting Planets) */}
+        {/* SECTION 2: 3D SOLAR SYSTEM & ORBITAL PHYSICS (Helios Sun & Orbiting Planets) */}
         {/* ===================================================================== */}
         <section 
           id="sec-solarsystem" 
@@ -430,11 +430,11 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onPlayIntro }) =
               </div>
 
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white font-sans uppercase tracking-tight">
-                3D Solar System & Keplerian Physics
+                3D Solar System & Orbital Physics
               </h2>
 
               <p className="text-sm sm:text-base text-slate-300 font-mono leading-relaxed">
-                Traverse our star system simulated with true orbital eccentricities, semi-major axes, orbital inclination, and Keplerian velocity propagation. Seamlessly switch between Presentation Scale for visual clarity and True Realistic Scale to experience the awe-inspiring vacuum of interplanetary space.
+                Traverse our star system simulated with period-accurate orbital speeds, real orbital inclinations, and circular orbits. Seamlessly switch between Presentation Scale for visual clarity and True Realistic Scale to experience the awe-inspiring vacuum of interplanetary space.
               </p>
 
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3.5 pt-2">
@@ -1222,7 +1222,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onPlayIntro }) =
               <span>NOVANEXUS ASTROPHYSICS LAB • 2026 EDITION</span>
             </div>
             <div className="flex items-center gap-4">
-              <span>Keplerian Kinematics • NASA JPL CNEOS • Lorentz Spacetime</span>
+              <span>Orbital Mechanics • NASA JPL CNEOS • Lorentz Spacetime</span>
               <span>•</span>
               <span className="text-cyan-300">All Systems Operational</span>
             </div>
