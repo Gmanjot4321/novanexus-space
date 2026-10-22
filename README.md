@@ -34,7 +34,7 @@ It combines custom orbital math, interactive camera controls, and a hybrid data 
 
 ### Backend, APIs & Data Pipeline
 * **Live Data Provider:** NASA Open APIs (APOD, Asteroid NeoWs, Mars Rover Photos)
-* **Static Data Generation:** Node.js offline AI scripting (`gen_neos.cjs`, `gen_universe_components.cjs`, and automated formatting utilities)
+* **Catalog Build Script:** `fetch_neos.cjs` pulls the real near-Earth object catalog from NASA NeoWs and the JPL Sentry risk table at build time
 * **Database (optional):** Supabase (PostgreSQL) sync
 * **Deployment:** Vercel
 
@@ -46,7 +46,7 @@ It combines custom orbital math, interactive camera controls, and a hybrid data 
 novanexus/
 │
 ├── [Offline AI Data Generators & Formatting Scripts]
-│   ├── gen_neos.cjs                # Script that generates the bundled static NEO catalog data
+│   ├── fetch_neos.cjs            # Build-time script: fetches the real NEO catalog (NASA NeoWs + JPL Sentry)
 │   ├── gen_universe_components.cjs # AI script for generating cosmic lore
 │   ├── make_bg_sleek.cjs           # Global background styling generator
 │   └── fix_*.cjs                   # Automated formatting scripts for batch processing (e.g., fix_celestial_bodies.cjs, fix_radar.cjs, fix_black_hole.cjs)
@@ -100,7 +100,7 @@ novanexus/
     │   ├── extraDashboardsData.ts  # Supplementary analytical metrics
     │   ├── extremeData.ts          # Edge-case cosmic phenomena
     │   ├── knowledgeData.ts        # General astronomical concepts
-    │   ├── neoData.ts              # Historical lore for famous Near-Earth Objects
+    │   ├── neoData.ts              # Real NEO catalog (1,600 NASA-tracked objects, split across neoDataParts/)
     │   ├── phenomenaData.ts        # Physics parameters for cosmic events
     │   ├── telemetryDashboardsData.ts # Baseline telemetry structures
     │   └── universeData.ts         # Macro-scale galactic mapping
