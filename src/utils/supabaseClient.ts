@@ -105,7 +105,7 @@ export async function fetchNasaLiveNeos(): Promise<{ neos: NeoObject[]; source: 
             id: item.id || `nasa-neo-${idx}`,
             name: item.name || `NEO ${item.id}`,
             designation: item.designation || item.name || `NEO ${item.id}`,
-            discoveryYear: parseInt(item.name?.match(/\b(19\d\d|20\d\d)\b/)?.[0] || '2024', 10),
+            discoveryYear: parseInt(item.name?.match(/\b(19\d\d|20\d\d)\b/)?.[0] || today.slice(0, 4), 10),
             estimatedDiameterMeters: { min: diamMin, max: diamMax },
             velocityKmS: parseFloat(velocityKms.toFixed(2)),
             velocityMph: Math.round(velocityMph),
@@ -114,14 +114,15 @@ export async function fetchNasaLiveNeos(): Promise<{ neos: NeoObject[]; source: 
             missDistanceLunarDistances: parseFloat(missDistLunar.toFixed(2)),
             isHazardous: isHazard,
             closeApproachDate: closeApproach?.close_approach_date_full || today,
-            torinoScale: isHazard ? (diamMax > 140 ? 1 : 0) : 0,
-            palermoScale: isHazard ? -2.5 : -5.0,
-            impactProbabilityPercent: isHazard ? 0.0001 : 0.0,
+            // The live feed carries no Sentry risk assessment; do not invent one.
+            torinoScale: 0,
+            palermoScale: null,
+            impactProbabilityPercent: 0,
             extinctionScalePercent: parseFloat((diamMax / 100).toFixed(2)),
-            composition: isHazard ? 'Silicate/Stony (S-type) asteroid' : 'Rocky Chondrite regolith',
-            orbitalGroup: missDistAU < 1.0 ? 'Aten' : 'Apollo',
-            riskAnalysis: `Live tracked flyby detected today by NASA JPL NeoWs radar. Approaching at ${velocityKms.toFixed(1)} km/s at a miss distance of ${missDistLunar.toFixed(1)} Lunar Distances (${missDistKm.toLocaleString()} km). ${isHazard ? 'Classified as Potentially Hazardous Asteroid (PHA) due to size and proximity.' : 'Standard orbital flyby with zero impact probability.'}`,
-            mitigationStrategy: isHazard ? 'Continuous radar astrometry tracking (Goldstone Solar System Radar) and kinetic deflection contingency.' : 'Orbital astrometric monitoring.'
+            composition: null,
+            orbitalGroup: 'Unclassified', // the feed payload has no orbit class
+            riskAnalysis: `Live tracked flyby detected today by NASA JPL NeoWs radar. Approaching at ${velocityKms.toFixed(1)} km/s at a miss distance of ${missDistLunar.toFixed(1)} Lunar Distances (${missDistKm.toLocaleString()} km). ${isHazard ? 'Classified as Potentially Hazardous Asteroid (PHA) due to size and proximity.' : 'Standard orbital flyby; this approach is a predicted pass at the distance shown.'}`,
+            mitigationStrategy: isHazard ? 'Continuous radar astrometry tracking while it remains on watch lists.' : 'Orbital astrometric monitoring.'
           };
         });
 
