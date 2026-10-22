@@ -76,12 +76,12 @@ export interface NeoObject {
   missDistanceLunarDistances: number;
   isHazardous: boolean;
   closeApproachDate: string;
-  torinoScale: number; // 0 to 10
-  palermoScale: number;
+  torinoScale: number; // 0 to 10, from the JPL Sentry risk table (0 = no identified hazard)
+  palermoScale: number | null; // JPL Sentry value; null when the object is not on the Sentry table
   impactProbabilityPercent: number;
   extinctionScalePercent: number; // Relative to 10,000m Chicxulub dinosaur killer
-  composition: string;
-  orbitalGroup: 'Aten' | 'Apollo' | 'Amor' | 'Atira';
+  composition: string | null; // not published by NeoWs for most objects
+  orbitalGroup: 'Aten' | 'Apollo' | 'Amor' | 'Atira' | 'Unclassified';
   riskAnalysis: string;
   mitigationStrategy: string;
 }
