@@ -1,3 +1,4 @@
+// NovaNexus entry point: mounts the app shell, routing, and global styles.
 import {StrictMode} from 'react';
 import {createRoot} from 'react-dom/client';
 import App from './App.tsx';
